@@ -4,7 +4,7 @@ Selecione o tipo de operação que deseja realizar:
 + para adição
 - para subtração
 * para multiplicação
-/ para divisão
+/ para divisãoS
 ''')
 
     number_1 = input('Digite o primeiro numero: ')

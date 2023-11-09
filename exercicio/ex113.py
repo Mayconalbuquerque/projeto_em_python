@@ -8,13 +8,19 @@
 # Crie uma função fala se um número é par ou ímpar.
 # Retorne seo número é par ou impar.
 
-def multiplicacao(*args):
+def multiplication(*args):
     total = 1
 
-    for numero in args:
-        total = total * numero
+    for number in args:
+        total = total * number
     return total
 
-numeros = 4, 4
-outra_multiplicacao = multiplicacao(*numeros)
-print(outra_multiplicacao)
+numbers = 1, 2, 3
+last_multiplier = multiplication(*numbers)
+print(last_multiplier)
+
+if (last_multiplier % 2) == 0:
+    print('This number is even!')
+
+else:
+    print('This number is odd') 
