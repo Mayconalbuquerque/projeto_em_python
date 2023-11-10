@@ -31,3 +31,4 @@ def executa(funcao, *args):
     return funcao(*args)
 
 print(executa(saudacao, 'bom dia', 'Maycon', '...'))
+
