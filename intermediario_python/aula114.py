@@ -2,11 +2,32 @@
 
 # Funções de primeira classe
 
-def saudacao(msg):
-    return msg
+def saudacao(msg, nome):
+    return f'{msg}, {nome}'
 
-def executa(funcao):
-    return funcao()
+def executa(funcao, *args):
+    return funcao(*args)
 
-saudacao_2 = saudacao
-v = executa(saudacao_2)
+v = executa(saudacao, 'Bom dia')
+
+print(v)
+# retorna um erro
+
+
+def saudacao(msg, nome):
+    return f'{msg}, {nome}'
+
+def executa(funcao, *args):
+    return funcao(*args)
+
+print(executa(saudacao, 'bom dia', 'Maycon'))
+
+
+
+def saudacao(msg, nome, outro_nome):
+    return f'{msg}, {nome}, {outro_nome}'
+
+def executa(funcao, *args):
+    return funcao(*args)
+
+print(executa(saudacao, 'bom dia', 'Maycon', '...'))
