@@ -9,10 +9,10 @@ number = 4
 def duplicate(number):
     return number * 2
 
-    def triplicate(number):
+def triplicate(number):
         return number * 3
 
-        def quadruplicate(number):
+def quadruplicate(number):
             return number * 4
 
 print('O dobro no número selecionado é', duplicate(number))
