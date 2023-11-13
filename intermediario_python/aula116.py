@@ -21,7 +21,7 @@ greeting_1 = create_greeting('Good Morning')
 greeting_2 = create_greeting('Good Night')
 
 print(greeting_1('Maycon'))
-print(greeting_2('Vitória'))
+print(greeting_2('Albuquerque'))
 
 # OR
 
