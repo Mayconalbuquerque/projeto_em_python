@@ -22,33 +22,30 @@ perguntas = [
     },
 ]
 
+for pergunta in perguntas:
+    print('Pergunta: ', pergunta['Pergunta'])
+    print()
 
-# print(perguntas[0]['Pergunta'])
-# print(perguntas[0]['Opções'])
-# resposta = 'Digite a sua resposta: '
-# resposta_correta = 4
+    opcoes = pergunta['Opções']
+    for i, opcao in enumerate(opcoes):
+        print(f'{i})', opcao)
+    print()
 
-# for opcao in perguntas[0]['Opções']:
-#     print(opcao)
+    resposta = input('Digite o indice correto: ')
+    
+    escolha_int = None
+    qnt_opcoes = len(opcoes)
 
-# print(resposta)
+    if resposta.isdigit():
+        escolha_int = int(resposta)
 
-# if resposta == resposta_correta:
-#     print('Você acertou!')
+    if escolha_int is not None:
+        if escolha_int >= 0 and escolha_int < qnt_opcoes:
+            if opcoes[escolha_int] == pergunta['Resposta']:
+                print('Você acertou!!!!')    
+            
+            else:
+                print('Você errou.')
 
-# else:
-#     ('Você errou!')
 
-def pergunta_1(perguntas):
-    print(perguntas[0]['Pergunta'])
-    print(perguntas[0]['Opções'])
-    resposta = input('Digite a sua resposta: ')
-    resposta_correta = '4'
-    if resposta == resposta_correta:
-        print('Você acertou!')
-
-    else:
-        print('Você errou!')
-
-print(pergunta_1(perguntas)) 
-
+print()
