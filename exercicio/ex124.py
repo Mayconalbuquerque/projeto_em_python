@@ -22,33 +22,14 @@ perguntas = [
     },
 ]
 
+for perguntas in perguntas:
+    print('Pergunta:', perguntas['Pergunta'])
+    print()
 
-# print(perguntas[0]['Pergunta'])
-# print(perguntas[0]['Opções'])
-# resposta = 'Digite a sua resposta: '
-# resposta_correta = 4
+    for i, opcoes in enumerate(perguntas['Opções']):
+        print(f'{i})', opcoes)
+    print()
 
-# for opcao in perguntas[0]['Opções']:
-#     print(opcao)
+    escolha = input('Escolha uma opção: ')
 
-# print(resposta)
-
-# if resposta == resposta_correta:
-#     print('Você acertou!')
-
-# else:
-#     ('Você errou!')
-
-def pergunta_1(perguntas):
-    print(perguntas[0]['Pergunta'])
-    print(perguntas[0]['Opções'])
-    resposta = input('Digite a sua resposta: ')
-    resposta_correta = '4'
-    if resposta == resposta_correta:
-        print('Você acertou!')
-
-    else:
-        print('Você errou!')
-
-print(pergunta_1(perguntas)) 
-
+    break
