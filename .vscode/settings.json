@@ -42,4 +42,6 @@
     // "python.defaultInterpreterPath": "./venv/bin/python",
     "python.analysis.typeCheckingMode": "off",
     "cSpell.enabled": false
+    "python.formatting.provider": "autopep8",
+    "editor.formatOnSave": true,
   }
