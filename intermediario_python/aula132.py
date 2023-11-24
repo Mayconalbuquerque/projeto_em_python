@@ -13,6 +13,15 @@ lista = [
     {'Nome': 'Veronica', 'Sobrenome': 'Albuquerque'},
 ]
 
-lista = [
-    4,23,1,32,4,5,6,6,
-]
+# lista = [
+#     4, 23, 1, 32, 4, 5, 6, 6, 
+# ]
+
+def ordenar(item):
+    return item['Nome']
+
+lista.sort(key=ordenar)
+# print(lista)
+
+for item in lista:
+    print(item)
