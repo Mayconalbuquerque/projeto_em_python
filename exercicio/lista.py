@@ -30,3 +30,4 @@ while True:
     elif letra_minuscula == 's':
         print('Obrigado por usar o nosso sistema!')
         break
+    
