@@ -30,7 +30,7 @@
 
 
 
-cpf = '838.697.760-48' \
+cpf = input('Digite um cpf: ') \
     .replace('.', '') \
     .replace('.', '') \
     .replace('.', '') \
