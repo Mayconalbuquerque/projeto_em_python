@@ -3,7 +3,7 @@ item_adicionado = lista1.append('')
 item_removido = lista1.pop()
 
 while True:
-    opcao = input('Selecione uma opção:\n[i]nserir  [a]pagar  [l]istar: ')
+    opcao = input('Selecione uma opção:\n[i]nserir  [a]pagar  [l]istar [s]air: ')
     letra_minuscula = opcao.lower()
 
     if letra_minuscula == 'i':
@@ -26,3 +26,7 @@ while True:
         
         item_removido = lista1.pop(numero_remover)
         print(f'A lista atualizada é: {lista1}')
+
+    elif letra_minuscula == 's':
+        print('Obrigado por usar o nosso sistema!')
+        break
